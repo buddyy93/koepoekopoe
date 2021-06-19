@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dropdowns nav_dropdowns, .dropdowns ul, .dropdowns li, .dropdowns a {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdowns a {
+    text-decoration: none;
+}
+
+.toggleMenu {
+    display: none;
+}
+
+.nav_dropdowns {
+    list-style: none;
+    *zoom: 1;
+}
+
+.nav_dropdowns:before,
+.nav_dropdowns:after {
+    content: " ";
+    display: table;
+}
+
+.nav_dropdowns:after {
+    clear: both;
+}
+
+.nav_dropdowns ul {
+    list-style: none;
+}
+
+.nav_dropdowns a {
+    padding: 15px 15px;
+}
+
+.nav_dropdowns a:hover {
+    background: #04519b;
+}
+
+.nav_dropdowns li {
+    position: relative;
+}
+
+.nav_dropdowns > li {
+    float: left;
+}
+
+.nav_dropdowns > li > .parent {
+    background-image: url("https://badungkab.go.id/assets/instansi/images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+.nav_dropdowns > li > a {
+    display: block;
+}
+
+.nav_dropdowns li ul {
+    position: absolute;
+    left: -9999px;
+}
+
+.nav_dropdowns > li.hover > ul {
+    left: 0;
+}
+
+.nav_dropdowns li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+
+.nav_dropdowns li li a {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.nav_dropdowns li li li a {
+    z-index: 200;
+}
+
+/* fonts */
+.dropdowns {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* colors */
+
+/* togle menu button for narrow screens */
+.toggleMenu {
+    background: none;
+    color: #ffffff;
+}
+
+/* general navigation background color */
+.nav_dropdowns {
+    background: none;
+}
+
+/* general navigation link font color */
+.nav_dropdowns a {
+    color: #fff;
+}
+
+/* first level items borders */
+.nav_dropdowns > li {
+/* border-top: 1 px solid #104336;*/
+}
+
+/* second level navigation colors */
+.nav_dropdowns li li a {
+    background: #0967bf;
+    border-top: 1px solid #1a7cbb;
+}
+
+.nav_dropdowns li li li a {
+    background: #0967bf;
+    border-top: 1px solid #1a7cbb;
+}
+
+/* layout */
+.dropdowns {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+a.toggleMenu {
+    padding: 10px 15px;
+}
+
+.nav_dropdowns ul {
+    width: 15em;
+}
+
+.nav_dropdowns > li > .parent {
+
+}
+
+@media screen and (max-width: 768px) {
+    .active {
+        display: block;
+    }
+
+    .nav_dropdowns > li {
+        float: none;
+    }
+
+    .nav_dropdowns > li > .parent {
+        background-position: 95% 50%;
+    }
+
+    .nav_dropdowns li li .parent {
+/*        background-image: url("https://badungkab.go.id/assets/instansi/images/downArrow.png");*/
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+
+    .nav_dropdowns ul {
+        display: block;
+        width: 100%;
+    }
+
+    .nav_dropdowns > li.hover > ul, .nav_dropdowns li li.hover ul {
+        position: static;
+    }
+
+}

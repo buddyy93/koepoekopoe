@@ -1,0 +1,61 @@
+@charset "utf-8";
+body{
+	background-color: rgba(0,0,0,.05);
+}
+
+.product-borderleft {
+	border-left: 8px solid #FFCC01;
+	padding-left: 2%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+	margin-left: 10%;
+}
+.btn-product {
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+	font-weight: bold;
+}
+.btn-product:hover {
+	border: thin solid #FFCC01;
+	background-color: #FFCC01;
+}
+tbody >tr > td {
+	border: none;
+}
+.product-circle {
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+}
+
+#otherproducts .owl-item img{
+	padding:0;
+}
+
+@media screen and (max-width: 767px) {
+	.product-circle {
+		position: absolute;
+		bottom: 25%;
+		left: 5%;
+	}
+	#relatedrecipes{
+		padding:0px;
+	}
+
+	#otherproducts .owl-item img{
+		padding: 0% 5%;
+	}
+	.caption h2{
+		font-size: 1em;
+	}
+	.koepoekoepoe-content h2{
+		font-size: large;
+	}
+	.koepoekoepoe-content h4{
+		font-size: medium;
+	}
+}

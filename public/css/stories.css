@@ -1,0 +1,145 @@
+@charset "utf-8";
+body {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.koepoekoepoe-story-header h2, .koepoekoepoe-story-header p {
+    display: inline !important;
+    border-left: thick solid #FFEE1E;
+    padding-left: 1%;
+    margin-right: 2%;
+}
+
+.koepoekoepoe-story-header div {
+    display: inline;
+}
+
+.story-owl-container {
+    background: white;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.koepoekoepoe-story-header div span {
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    height: auto;
+    border-width: thin;
+    border-style: solid;
+    opacity: .5;
+}
+
+.story-img .owl-item img {
+    height: 328px !important;
+}
+
+.story-caption {
+    color: white !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 328px;
+    width: 100%;
+    padding: 10%;
+    margin: auto;
+    background: rgba(0, 0, 0, .3);
+    font-size: large;
+    text-align: left;
+}
+
+.story-desc {
+    padding: 5%;
+    border: thin solid rgba(0, 0, 0, 0.20);
+}
+
+.story-desc h3 {
+    margin-top: 0;
+}
+
+.story-container-nopadding {
+    padding: 0px;
+}
+
+.story-love-btn {
+    margin: 6px 12px;
+    background: rgba(0, 0, 0, 0);
+    border: thin solid red;
+    color: red;
+    padding: 6px 12px;
+}
+
+.story-love-btn:hover {
+    background: red;
+    color: white;
+    border: thin solid red;
+}
+
+.story-love-btn:active, .story-love-btn:focus {
+    color: inherit;
+}
+
+.btn-view-stories {
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    border: thin yellow solid;
+}
+
+.koepoekoepoe-stories-content > .owl-carousel {
+    padding: 0px !important;
+}
+
+.koepoekoepoe-story-navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.koepoekoepoe-story-navigation span {
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+.featured-story > .owl-nav > .owl-prev {
+    position: absolute;
+    right: 50px;
+    margin-top: 0px;
+    top: 0px;
+    text-align: right;
+}
+
+.featured-story > .owl-nav > .owl-next {
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+    top: 0px;
+    text-align: right;
+}
+
+.featured-story img.featured-story-img {
+    width: 250px !important;
+    height: 250px !important;
+}
+
+span.koepoe-story-nav {
+    font-size: x-large !important;
+    padding: 10px !important;
+    background-color: red !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .story-header-responsive {
+        margin: 0% 5%;
+        font-size: 1.5em;
+    }
+
+    .koepoekoepoe-story-header p {
+        display: none !important;
+    }
+}
